@@ -17,99 +17,99 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SmartCondWeb
 build_property.RootNamespace = SmartCondWeb
-build_property.ProjectDir = C:\github\SmartCondWeb\SmartCondWeb\
+build_property.ProjectDir = C:\Projetos\SmartCondWeb\SmartCondWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\github\SmartCondWeb\SmartCondWeb
+build_property.MSBuildProjectDirectory = C:\Projetos\SmartCondWeb\SmartCondWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Add.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZW93bmVyXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Index.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZW93bmVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Update.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Homeowner/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZW93bmVyXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/Add.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzaWRlbnRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/Index.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzaWRlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/UnitResidents.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Resident/UnitResidents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzaWRlbnRcVW5pdFJlc2lkZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/Error.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Unit/Index.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Unit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVW5pdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Add.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Index.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Update.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Vehicle/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/Home/Index.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/Home/Privacy.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/Error.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/_ViewImports.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/_ViewStart.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0o3tyq2s70
 
-[C:/github/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/_Layout.cshtml]
+[C:/Projetos/SmartCondWeb/SmartCondWeb/Areas/User/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-avy9vr9cq2

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCondWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+029490c9c1460b43c860e92aa0e7d9a23d2c05ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84ad7eed62c8955c8c92e989592f17df9c63362a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCondWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCondWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

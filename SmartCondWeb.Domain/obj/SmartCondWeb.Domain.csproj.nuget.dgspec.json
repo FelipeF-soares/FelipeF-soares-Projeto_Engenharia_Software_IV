@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj": {}
+    "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj": {}
   },
   "projects": {
-    "C:\\github\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj": {
+    "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
         "projectName": "SmartCondWeb.Domain",
-        "projectPath": "C:\\github\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
+        "projectPath": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
         "packagesPath": "C:\\Users\\f150030\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\SmartCondWeb\\SmartCondWeb.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

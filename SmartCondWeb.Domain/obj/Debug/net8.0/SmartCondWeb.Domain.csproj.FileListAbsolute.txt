@@ -33,3 +33,16 @@ C:\github\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.
 C:\github\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\refint\SmartCondWeb.Domain.dll
 C:\github\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.pdb
 C:\github\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\ref\SmartCondWeb.Domain.dll
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\bin\Debug\net8.0\SmartCondWeb.Domain.deps.json
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\bin\Debug\net8.0\SmartCondWeb.Domain.dll
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\bin\Debug\net8.0\SmartCondWeb.Domain.pdb
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.AssemblyInfoInputs.cache
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.AssemblyInfo.cs
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.sourcelink.json
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.dll
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\refint\SmartCondWeb.Domain.dll
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.pdb
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\ref\SmartCondWeb.Domain.dll
+C:\Projetos\SmartCondWeb\SmartCondWeb.Domain\obj\Debug\net8.0\SmartCondWeb.Domain.csproj.AssemblyReference.cache

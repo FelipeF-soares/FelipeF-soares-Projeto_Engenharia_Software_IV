@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -24,4 +25,8 @@
     <ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
 	</ItemGroup>
+    <ItemGroup>
+      <Folder Include="wwwroot\images\logo\" />
+      <Folder Include="wwwroot\report\" />
+    </ItemGroup>
 </Project>
