@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Resident>
+
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-8"><h3>Lista de Moradores</h3></div>
+                <div class="col-4">
+                    <form class="d-flex" asp-action="Index">
+                        <input class="form-control me-2" type="search" id="name" name="Name" placeholder="Nome" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Apartamento</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Contato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var resident in @Model)
+                    {
+                        <tr>
+                            <th scope="row">@resident.Unit.Building</th>
+                            <td>@resident.Unit.UnitNumber</td>
+                            <td>@resident.Name</td>
+                            <td>@resident.CellPhone</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="m-3">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        @if (ViewBag.CurrentPage > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })">Anterior</a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                            </li>
+                        }
+
+                        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">Próximo</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</div>

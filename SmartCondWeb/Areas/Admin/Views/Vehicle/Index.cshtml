@@ -1,0 +1,53 @@
+﻿@model List<Vehicle>
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header" >
+            <div class="row">
+                <div class="col-9">
+                    <h3 class="card-title text-center">Lista de Veículos</h3>
+                </div>
+                <div class="col-3">
+                    <a class="btn btn-outline-success bt-sm">Relatório</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card-body text-center">
+
+            @if (Model.Any())
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Bloco</th>
+                            <th scope="col">Apartamento</th>
+                            <th scope="col">Placa</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Modelo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vehicle in Model.OrderBy(builder => builder.Unit.Building).OrderBy(ap => ap.Unit.UnitNumber))
+                        {
+                            <tr>
+                                <th scope="row">@vehicle.Unit.Building</th>
+                                <td>@vehicle.Unit.UnitNumber</td>
+                                <td>@vehicle.LicensePlate</td>
+                                <td>@vehicle.Type</td>
+                                <td>@vehicle.Make</td>
+                                <td>@vehicle.Model</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <h1 class="card-title p-2">Lista está vazia!</h1>
+            }
+            
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SmartCondWeb.Domain/1.0.0": {
+        "runtime": {
+          "SmartCondWeb.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartCondWeb.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

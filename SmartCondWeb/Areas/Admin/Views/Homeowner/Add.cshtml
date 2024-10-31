@@ -1,0 +1,39 @@
+﻿@model HomeownerVM
+
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header text-center">
+           <h2>Adicionar Proprietário</h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label asp-for="@Model.Homeowner.Name" class="form-label"></label>
+                    <input asp-for="@Model.Homeowner.Name" class="form-control">
+                    <span asp-validation-for="@Model.Homeowner.Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Homeowner.IdentificationDocument" class="form-label"></label>
+                    <input asp-for="@Model.Homeowner.IdentificationDocument" class="form-control">
+                    <span asp-validation-for="@Model.Homeowner.IdentificationDocument" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Homeowner.CellPhone" class="form-label"></label>
+                    <input asp-for="@Model.Homeowner.CellPhone" class="form-control">
+                    <span asp-validation-for="@Model.Homeowner.CellPhone" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Homeowner.Email" class="form-label"></label>
+                    <input asp-for="@Model.Homeowner.Email" class="form-control">
+                    <span asp-validation-for="@Model.Homeowner.Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <select asp-for="@Model.VmId" asp-items="@Model.UnitysEmpty" class="form-select">
+                        <option disabled selected>-- Escolha uma Unidade --</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Adicionar Morador</button>
+            </form>
+        </div>
+    </div>
+</div>

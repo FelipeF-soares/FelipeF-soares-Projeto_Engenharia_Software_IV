@@ -1,0 +1,67 @@
+﻿@model List<Unit>
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-9"> <h3>Lista das Unidades</h3> </div>
+                <div class="col-3"> <a class="btn btn-outline-success btn-sm">Relatório</a></div>
+            </div>
+           
+        </div>
+        <div class="card-body text-center">
+            @if (Model.Any())
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col">Bloco</th>
+                            <th scope="col">Número do Apartamento</th>
+                            <th scope="col">Proprietário</th>
+                            <th scope="col">Moradores</th>
+                            <th scope="col">Veículos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var unit in Model)
+                        {
+                            <tr class="text-center">
+                                <th scope="row">@unit.Building</th>
+                                <td>@unit.UnitNumber</td>
+                                <td>
+                                    @(unit.Homeowner == null ? "Proprietário não Cadastrado" : unit.Homeowner.Name)
+                                </td>
+                                <td>
+                                    @if (unit.Homeowner != null)
+                                    {
+                                        <a class="btn btn-secondary btn-sm" asp-area="Admin" asp-controller="Resident" asp-action="UnitResidents" asp-route-id="@unit.Id">Adicionar Moradores</a>
+                                    }
+                                </td>
+                                <td>
+                                    @if (unit.Homeowner != null)
+                                    {
+                                        @if (unit.Vehicles != null)
+                                        {
+                                            <a class="btn btn-secondary btn-sm" asp-area="Admin" asp-controller="Vehicle" asp-action="Update" asp-route-id="@unit.Vehicles.Id">Editar Veículo</a>
+                                        }
+                                        else
+                                        {
+                                            <a class="btn btn-warning btn-sm" asp-area="Admin" asp-controller="Vehicle" asp-action="Add" asp-route-id="@unit.Id">Adicionar Veículo</a>
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <h1 class="card-title p-2">Lista está vazia!</h1>
+            }
+           
+        </div>
+    </div>
+</div>
+
+   
+

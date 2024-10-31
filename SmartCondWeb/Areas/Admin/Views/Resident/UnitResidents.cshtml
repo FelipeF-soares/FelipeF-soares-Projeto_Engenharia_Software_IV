@@ -1,0 +1,50 @@
+﻿@model Unit
+
+<div class="container">
+    <div class="card">
+        
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-10 text-center">
+                        <h5>Lista de Moradores da Unidade: @($"{Model.UnitNumber} {Model.Building}")</h5>
+                    </div>
+                    <div class="col-2 text-end">
+                        <a asp-area="Admin" asp-controller="Resident" asp-action="Add" asp-route-id="@Model.Id" class="btn btn-secondary btn-sm">Adicionar Morador</a>
+                    </div>
+                </div>
+            </div>
+        <div class="card-body">
+
+            @if(Model.Residents.Any())
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Código do Morador</th>
+                            <th scope="col">Nome Completo</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Contato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var resident in Model.Residents)
+                        {
+                            <tr>
+                                <th><img src="@resident.ImageURL" width="75px" height="75px" /></th>
+                                <th>@resident.UnitCodeResident</th>
+                                <td>@resident.Name</td>
+                                <td>@resident.Email</td>
+                                <td>@resident.CellPhone</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <h3>Lista Vazia</h3>
+            }
+        </div>
+    </div>
+</div>
