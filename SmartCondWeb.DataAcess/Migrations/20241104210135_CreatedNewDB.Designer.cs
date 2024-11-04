@@ -12,8 +12,8 @@ using SmartCondWeb.DataAcess.ContextPersist;
 namespace SmartCondWeb.DataAcess.Migrations
 {
     [DbContext(typeof(SmartCondContext))]
-    [Migration("20241030220630_CreateDBUniqueValidation")]
-    partial class CreateDBUniqueValidation
+    [Migration("20241104210135_CreatedNewDB")]
+    partial class CreatedNewDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

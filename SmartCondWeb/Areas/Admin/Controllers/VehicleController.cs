@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SmartCondWeb.DataAcess.Persist.Interfaces;
 using SmartCondWeb.Domain.Things;
+using SmartCondWeb.Domain.Utils;
 
 namespace SmartCondWeb.Areas.Admin.Controllers;
 [Area("Admin")]
@@ -8,11 +9,13 @@ public class VehicleController : Controller
 {
     private readonly IUnitPersist unitPersist;
     private readonly IVehiclePersist vehiclePersist;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
-    public VehicleController(IUnitPersist unitPersist, IVehiclePersist vehiclePersist)
+    public VehicleController(IUnitPersist unitPersist, IVehiclePersist vehiclePersist, IWebHostEnvironment webHostEnvironment)
     {
         this.unitPersist = unitPersist;
         this.vehiclePersist = vehiclePersist;
+        this.webHostEnvironment = webHostEnvironment;
     }
     public IActionResult Index()
     {
@@ -89,5 +92,19 @@ public class VehicleController : Controller
         {
             return RedirectToAction("Error", "Shared");
         }
+    }
+    public IActionResult ReportVehicle()
+    {
+        var vehicles = vehiclePersist.GetAllVehicles();
+        vehicles = vehicles.OrderBy(v => v.Unit.UnitCode).ToList();
+        string wwwRootPath = webHostEnvironment.WebRootPath;
+        CreateReportVehicles createReport = new CreateReportVehicles(wwwRootPath);
+        var path = createReport.ReportPDF(vehicles);
+        if (!System.IO.File.Exists(path))
+        {
+            return NotFound("O arquivo não foi encontrado!");
+        }
+        byte[] fileByte = System.IO.File.ReadAllBytes(path);
+        return File(fileByte, "application/pdf", "Relatorio_De_Veiculos.pdf");
     }
 }

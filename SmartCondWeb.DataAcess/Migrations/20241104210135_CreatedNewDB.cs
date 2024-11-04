@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SmartCondWeb.DataAcess.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateDBUniqueValidation : Migration
+    public partial class CreatedNewDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
