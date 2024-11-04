@@ -1,5 +1,6 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
+using iTextSharp.xmp.impl;
 using Microsoft.AspNetCore.Hosting;
 using SmartCondWeb.Domain.People;
 using SmartCondWeb.Domain.Things;
@@ -12,41 +13,52 @@ using System.Threading.Tasks;
 
 namespace SmartCondWeb.Domain.Utils;
 
-public class CreateReport
+public class CreateReportUnits
 {
     private BaseFont baseFont;
     private Font cellFont;
     private string wwwRootPath;
+    private string path;
     
-    public CreateReport(string wwwRootPath)
+    public CreateReportUnits(string wwwRootPath)
     {
-        this.wwwRootPath = wwwRootPath;
+        this.wwwRootPath = wwwRootPath + "\\report\\Units\\";
         baseFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252,false);
         cellFont = new Font(baseFont,10,iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
         
     }
 
-    public void ReportPDF(Unit[] units)
+    public string ReportPDF(List<Unit> units)
     {
-        if(units.Length > 0)
-        {
+            ClearDirectory(wwwRootPath);
             var pdf = PageConfiguration(15F, 15F, 15F, 20F, true);
             var reportName = CreateReportName("Proprietarios");
             var folder = CreateReportInPath(reportName);
             var writer = CreatePdfWriter(pdf, folder);
             pdf.Open();
-            var title = MakeTitle("Relatório de Proprietários", 32);
+            var title = MakeTitle("Relatório dos Proprietários", 32);
             pdf.Add(title);
-            string logoPath = Path.Combine(wwwRootPath, @"\images\logo\logo.png");
+            string logoPath = wwwRootPath + @"\images\logo\logo.png";
             AddLogo(logoPath, pdf, writer);
-            var table = MakeTable(6);
-            string[] valueList = { "Bloco", "Apartamento", "Nome", "CPF/CNPJ","e-mail", "Contato" };
-            LikedCellInTable(table, valueList);
-            LinkedValueInCell(table, units);
-            pdf.Add(table);
+            if (units.Any())
+            {
+                var table = MakeTable(6);
+                string[] valueList = { "Bloco", "Apartamento", "Nome", "CPF/CNPJ", "e-mail", "Contato" };
+                LikedCellInTable(table, valueList);
+                LinkedValueInCell(table, units);
+                pdf.Add(table);
+
+            }
+            else
+            {
+                var paragraf = MakeParagraph("Lista vazia");
+                pdf.Add(paragraf);
+            }
             pdf.Close();
             folder.Close();
-        }
+        return wwwRootPath + reportName;
+  
+        return null;
     }
 
     private Document PageConfiguration(float leftSide, float rightSide, float top, float botom, bool horizontal)
@@ -67,12 +79,12 @@ public class CreateReport
 
     private string CreateReportName(string reportName)
     {
-        return $"\\report\\{reportName}.{DateTime.Now.ToString("dd.MM.yyyy.HH.mm.zz")}.pdf";
+        return $"{reportName}.{DateTime.Now.ToString("dd.MM.yyyy.HH.mm.ss")}.pdf";
     }
     private FileStream CreateReportInPath(string reportName)
     {
-        string th = Path.Combine(wwwRootPath, @"\report\");
-        var path = Path.Combine(th, reportName);
+
+        path = wwwRootPath + reportName;
         return new FileStream(path, FileMode.Create);
     }
     private PdfWriter CreatePdfWriter(Document pdf, FileStream path)
@@ -133,23 +145,40 @@ public class CreateReport
         }
     }
 
-    private void LinkedValueInCell(PdfPTable table, Unit[] valueList)
+    private void LinkedValueInCell(PdfPTable table, List<Unit> valueList)
     {
 
-        for(int i = 0; i < valueList.Length; i++)
+        for(int i = 0; i < valueList.Count; i++)
         {
             var building = MakeCell(valueList[i].Building, table);
             table.AddCell(building);
             var unitNumber = MakeCell(valueList[i].UnitNumber, table);
             table.AddCell(unitNumber);
-            var name = MakeCell(valueList[i].Homeowner.Name, table);
-            table.AddCell(name);
-            var identificationDocument = MakeCell(valueList[i].Homeowner.IdentificationDocument, table);
-            table.AddCell(identificationDocument);
-            var email = MakeCell(valueList[i].Homeowner.Email, table);
-            table.AddCell(email);
-            var cellPhone = MakeCell(valueList[i].Homeowner.CellPhone, table);
-            table.AddCell(cellPhone);
+            if(valueList[i].Homeowner != null)
+            {
+                var name = MakeCell(valueList[i].Homeowner.Name, table);
+                table.AddCell(name);
+                var identificationDocument = MakeCell(valueList[i].Homeowner.IdentificationDocument, table);
+                table.AddCell(identificationDocument);
+                var email = MakeCell(valueList[i].Homeowner.Email, table);
+                table.AddCell(email);
+                var cellPhone = MakeCell(valueList[i].Homeowner.CellPhone, table);
+                table.AddCell(cellPhone);
+            }
+            else
+            {
+                var name = MakeCell("Não Cadastrado", table);
+                table.AddCell(name);
+                var identificationDocument = MakeCell("Não Cadastrado", table);
+                table.AddCell(identificationDocument);
+                var email = MakeCell("Não Cadastrado", table);
+                table.AddCell(email);
+                var cellPhone = MakeCell("Não Cadastrado", table);
+                table.AddCell(cellPhone);
+            }
+           
+            
+           
         }
     }
 
@@ -167,5 +196,17 @@ public class CreateReport
             logo.SetAbsolutePosition(marginLeft, marginTop);
             writer.DirectContent.AddImage(logo);
         }
+    }
+    private void ClearDirectory(string pathDirectory)
+    {
+        string[] aquivos = Directory.GetFiles(pathDirectory);
+       if(aquivos.Length > 0)
+        {
+            foreach (string aquivo in aquivos)
+            {
+                File.Delete(aquivo);
+            }
+        }
+
     }
 }

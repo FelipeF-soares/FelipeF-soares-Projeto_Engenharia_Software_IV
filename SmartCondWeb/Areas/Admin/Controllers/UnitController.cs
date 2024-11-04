@@ -30,10 +30,15 @@ public class UnitController : Controller
     }
     public IActionResult UnitReport()
     {
-        var units = persist.GetAllUnits().ToArray();
+        var units = persist.GetAllUnits();
         string wwwRootPath = webHostEnvironment.WebRootPath;
-        CreateReport createReport = new CreateReport(wwwRootPath);
-        createReport.ReportPDF(units);
-        return View();
+        CreateReportUnits createReport = new CreateReportUnits(wwwRootPath);
+        var path = createReport.ReportPDF(units);
+        if (!System.IO.File.Exists(path)) 
+        { 
+            return NotFound("O arquivo não foi encontrado!");
+        }
+        byte[] fileByte = System.IO.File.ReadAllBytes(path);
+        return File(fileByte, "application/pdf", "Relatório_Das_Unidades.pdf");
     }
 }

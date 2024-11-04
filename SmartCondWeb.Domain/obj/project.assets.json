@@ -73,24 +73,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\f150030\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
+      "projectUniqueName": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
       "projectName": "SmartCondWeb.Domain",
-      "projectPath": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
-      "packagesPath": "C:\\Users\\f150030\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\SmartCondWeb\\SmartCondWeb.Domain\\obj\\",
+      "projectPath": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj",
+      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+      "outputPath": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\f150030\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -146,7 +141,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

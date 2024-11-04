@@ -27,6 +27,6 @@
 	</ItemGroup>
     <ItemGroup>
       <Folder Include="wwwroot\images\logo\" />
-      <Folder Include="wwwroot\report\" />
+      <Folder Include="wwwroot\report\Units\" />
     </ItemGroup>
 </Project>
