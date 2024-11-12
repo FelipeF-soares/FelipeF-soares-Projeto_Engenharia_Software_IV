@@ -1544,7 +1544,6 @@ E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Deb
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Composition.TypedParts.dll
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Drawing.Common.dll
-E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Formats.Asn1.dll
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -1724,3 +1723,4 @@ E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\obj\Deb
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\obj\Debug\net8.0\SmartCondWeb.pdb
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\obj\Debug\net8.0\SmartCondWeb.genruntimeconfig.cache
 E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\obj\Debug\net8.0\ref\SmartCondWeb.dll
+E:\0.Projetos\FelipeF-soares-Projeto_Engenharia_Software_IV\SmartCondWeb\bin\Debug\net8.0\System.Formats.Asn1.dll

@@ -43,7 +43,7 @@ public class CreateReportVehicles
             if (vehicles.Any())
             {
                 var table = MakeTable(9);
-                string[] valueList = { "Bloco", "Apto", "Placa", "Marca", "Modelo", "Vaga Alugada","Bloco", "Apto do Locador", "Nome do Locador" };
+                string[] valueList = { "Bloco", "Apto", "Placa", "Marca", "Modelo", "Alugada","Bloco", "Apto do Locador", "Nome do Locador" };
                 LikedCellInTable(table, valueList);
                 LinkedValueInCell(table, vehicles);
                 pdf.Add(table);
@@ -109,7 +109,7 @@ public class CreateReportVehicles
     private PdfPTable MakeTable(int cols)
     {
         var table = new PdfPTable(cols);
-        float[] widhtCol = { 1f, 1f, 1f, 1.5f, 1.5f,1.5f, 1f,1f,2f };
+        float[] widhtCol = { 1f, 1f, 1f, 1f, 1f,1f, 1f,2f,2f };
         table.SetWidths(widhtCol);
         table.DefaultCell.BorderWidth = 0;
         table.WidthPercentage = 100;

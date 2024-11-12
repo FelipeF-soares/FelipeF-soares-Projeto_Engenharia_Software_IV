@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\",
+  "WorkspaceRootPath": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|c:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb.domain\\utils\\createreportunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|solutionrelative:smartcondweb.domain\\utils\\createreportunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|e:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb.domain\\utils\\createreportvehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|solutionrelative:smartcondweb.domain\\utils\\createreportvehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|c:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb\\areas\\admin\\controllers\\unitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|solutionrelative:smartcondweb\\areas\\admin\\controllers\\unitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|e:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb.domain\\things\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD6A89FA-D1CE-44F6-8E28-AB47DC1F9615}|SmartCondWeb.Domain\\SmartCondWeb.Domain.csproj|solutionrelative:smartcondweb.domain\\things\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|e:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb\\areas\\admin\\views\\vehicle\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|solutionrelative:smartcondweb\\areas\\admin\\views\\vehicle\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|e:\\0.projetos\\felipef-soares-projeto_engenharia_software_iv\\smartcondweb\\areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EF3C4F-AA4F-4E65-8EF8-48E4A65121CA}|SmartCondWeb\\SmartCondWeb.csproj|solutionrelative:smartcondweb\\areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateReportUnits.cs",
-              "DocumentMoniker": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Utils\\CreateReportUnits.cs",
-              "RelativeDocumentMoniker": "SmartCondWeb.Domain\\Utils\\CreateReportUnits.cs",
-              "ToolTip": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Utils\\CreateReportUnits.cs",
-              "RelativeToolTip": "SmartCondWeb.Domain\\Utils\\CreateReportUnits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAiAAAAAAAAAA==",
+              "Title": "CreateReportVehicles.cs",
+              "DocumentMoniker": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Utils\\CreateReportVehicles.cs",
+              "RelativeDocumentMoniker": "SmartCondWeb.Domain\\Utils\\CreateReportVehicles.cs",
+              "ToolTip": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Utils\\CreateReportVehicles.cs",
+              "RelativeToolTip": "SmartCondWeb.Domain\\Utils\\CreateReportVehicles.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAwG8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T19:50:13.313Z",
+              "WhenOpened": "2024-11-07T22:19:58.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitController.cs",
-              "DocumentMoniker": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Controllers\\UnitController.cs",
-              "RelativeDocumentMoniker": "SmartCondWeb\\Areas\\Admin\\Controllers\\UnitController.cs",
-              "ToolTip": "C:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Controllers\\UnitController.cs",
-              "RelativeToolTip": "SmartCondWeb\\Areas\\Admin\\Controllers\\UnitController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCkAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Views\\Vehicle\\Add.cshtml",
+              "RelativeDocumentMoniker": "SmartCondWeb\\Areas\\Admin\\Views\\Vehicle\\Add.cshtml",
+              "ToolTip": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Views\\Vehicle\\Add.cshtml",
+              "RelativeToolTip": "SmartCondWeb\\Areas\\Admin\\Views\\Vehicle\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T18:30:35.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "SmartCondWeb\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "ToolTip": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "SmartCondWeb\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T22:16:53.784Z",
+              "WhenOpened": "2024-11-04T18:30:27.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Things\\Vehicle.cs",
+              "RelativeDocumentMoniker": "SmartCondWeb.Domain\\Things\\Vehicle.cs",
+              "ToolTip": "E:\\0.Projetos\\FelipeF-soares-Projeto_Engenharia_Software_IV\\SmartCondWeb.Domain\\Things\\Vehicle.cs",
+              "RelativeToolTip": "SmartCondWeb.Domain\\Things\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:30:14.084Z",
               "EditorCaption": ""
             }
           ]
