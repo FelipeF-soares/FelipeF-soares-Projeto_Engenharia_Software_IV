@@ -1,0 +1,25 @@
+﻿@model Visitant
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header text-center">
+            <h2>Adicionar Visitante</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="@Model.Name" class="form-label"></label>
+                    <input asp-for="@Model.Name" class="form-control">
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                </div>
+               
+                <div class="mb-3">
+                    <label asp-for="@Model.IdentificationDocument" class="form-label"></label>
+                    <input asp-for="@Model.IdentificationDocument" class="form-control">
+                    <span asp-validation-for="@Model.IdentificationDocument" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Adicionar Visitante</button>
+            </form>
+        </div>
+    </div>
+</div>
+

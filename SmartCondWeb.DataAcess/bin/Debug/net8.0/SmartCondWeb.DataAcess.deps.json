@@ -551,7 +551,10 @@
           "iTextSharp": "5.5.13.4"
         },
         "runtime": {
-          "SmartCondWeb.Domain.dll": {}
+          "SmartCondWeb.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -10,6 +10,7 @@ namespace SmartCondWeb.Domain.People;
 
 public abstract class Person
 {
+    
     private string name;
     [Key]
     public int Id { get; set; }
@@ -23,7 +24,4 @@ public abstract class Person
     [Required(ErrorMessage = "CPF/CNPJ é um Campo Obrigatório!")]
     [DisplayName("CPF/CNPJ")]
     public string IdentificationDocument { get; set; }
-    [Required(ErrorMessage = "Celular é um Campo Obrigatório!")]
-    [DisplayName("Celular")]
-    public string CellPhone { get; set; }
 }

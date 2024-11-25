@@ -12,8 +12,8 @@ using SmartCondWeb.DataAcess.ContextPersist;
 namespace SmartCondWeb.DataAcess.Migrations
 {
     [DbContext(typeof(SmartCondContext))]
-    [Migration("20241104210135_CreatedNewDB")]
-    partial class CreatedNewDB
+    [Migration("20241117214011_CreateDbProject")]
+    partial class CreateDbProject
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,6 +53,38 @@ namespace SmartCondWeb.DataAcess.Migrations
                     b.HasIndex("ResidentId");
 
                     b.ToTable("Pets");
+                });
+
+            modelBuilder.Entity("SmartCondWeb.Domain.Events.VisitorAccessControl", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("Arrival")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Building")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("Leave")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UnitNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("VisitantId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VisitantId");
+
+                    b.ToTable("VisitorAccessControls");
                 });
 
             modelBuilder.Entity("SmartCondWeb.Domain.People.Homeowner", b =>
@@ -126,6 +158,30 @@ namespace SmartCondWeb.DataAcess.Migrations
                     b.HasIndex("UnitId");
 
                     b.ToTable("Residents");
+                });
+
+            modelBuilder.Entity("SmartCondWeb.Domain.People.Visitant", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("IdentificationDocument")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdentificationDocument")
+                        .IsUnique();
+
+                    b.ToTable("Visitants");
                 });
 
             modelBuilder.Entity("SmartCondWeb.Domain.Things.Unit", b =>
@@ -384,6 +440,17 @@ namespace SmartCondWeb.DataAcess.Migrations
                         .IsRequired();
 
                     b.Navigation("Resident");
+                });
+
+            modelBuilder.Entity("SmartCondWeb.Domain.Events.VisitorAccessControl", b =>
+                {
+                    b.HasOne("SmartCondWeb.Domain.People.Visitant", "Visitant")
+                        .WithMany()
+                        .HasForeignKey("VisitantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Visitant");
                 });
 
             modelBuilder.Entity("SmartCondWeb.Domain.People.Resident", b =>

@@ -2,6 +2,7 @@
 using SmartCondWeb.Domain.Animal;
 using SmartCondWeb.Domain.People;
 using SmartCondWeb.Domain.Things;
+using SmartCondWeb.Domain.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,8 @@ public class SmartCondContext: DbContext
     public DbSet<Resident> Residents { get; set; }
     public DbSet<Pet> Pets { get; set; }
     public DbSet<Vehicle> Vehicles { get; set; }
+    public DbSet<Visitant> Visitants { get; set; }
+    public DbSet<VisitorAccessControl> VisitorAccessControls { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -44,6 +47,10 @@ public class SmartCondContext: DbContext
                     .IsRequired(false);
         modelBuilder.Entity<Vehicle>()
                     .HasIndex(vehicle => vehicle.LicensePlate)
+                    .IsUnique();
+
+        modelBuilder.Entity<Visitant>()
+                    .HasIndex(person => person.IdentificationDocument)
                     .IsUnique();
 
         modelBuilder.Entity<Unit>().HasData

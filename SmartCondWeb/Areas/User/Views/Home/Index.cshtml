@@ -1,8 +1,66 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿@model DashboardVM
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header text-center">
+            <h2>Painel de controle</h2>
+        </div>
+        <div class="card-body">
+           <div class="row mb-3">
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações do Condomínio.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Total de Unidades: @Model.TotalUnits</h6>
+                            <p class="card-text">
+                                O condomínio é formado por duas torres, com 13 andares cada, nas unidades do térreo possui cinco apartamentos por andar,
+                                já nos demais andares são 6 unidades por andar, cada torre possui 2 elevadores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações dos Veículos.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Total de Veículos: @Model.TotalVehicles </h6>
+                            <p class="card-text">
+                                Estão cadastrados um total de @Model.TotalVehicles veículos. O condomínio dispõe de
+                                200 vagas, sendo 2 destinadas a visitantes <b> (localizadas ao lado da portaria)</b>, 
+                                3 vagas para pessoas com necessidades especiais e 1 vaga reservada para carga e descarga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="row  mb-3">
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações dos Moradores.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Total de Moradores: @Model.TotalResidents </h6>
+                            <p class="card-text">
+                                Estão cadastrados @Model.TotalResidents moradores, incluindo proprietários e inquilinos 
+                                com dados registrados e validados pela administração. Esses moradores têm acesso ao condomínio 
+                                por meio de uma entrada específica e uso de biometria e Tag veícular.
+                                <br /> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações dos Visitantes.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Total de Visitantes: @Model.TotalVisitant</h6>
+                            <p class="card-text">
+                                Está cadastrado um total de @Model.TotalVisitant visitantes. <b>Os visitantes não possuem acesso liberado automaticamente, sendo necessária a autorização prévia do morador.</b>
+                                <br /> Considera-se visitante qualquer pessoa que já acessou o condomínio, incluindo prestadores de serviço e visitas às unidades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+   

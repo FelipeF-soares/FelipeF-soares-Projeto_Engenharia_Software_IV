@@ -13,6 +13,10 @@ namespace SmartCondWeb.Domain.People;
 
 public class Resident:Person
 {
+    [Required(ErrorMessage = "Celular é um Campo Obrigatório!")]
+    [DisplayName("Celular")]
+    public string CellPhone { get; set; }
+
     [Required]
     [DisplayName("Código do Morador")]
     public string UnitCodeResident { get; set; }

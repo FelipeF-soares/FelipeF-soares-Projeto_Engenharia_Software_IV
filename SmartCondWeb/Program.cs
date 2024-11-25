@@ -17,6 +17,9 @@ builder.Services.AddScoped<IPetPersist,PetPersist>();
 builder.Services.AddScoped<IResidentPersist,ResidentPersist>();
 builder.Services.AddScoped<IUnitPersist,UnitPersist>();
 builder.Services.AddScoped<IVehiclePersist,VehiclePersist>();
+builder.Services.AddScoped<IVisitantPersist,VisitantPersist>();
+builder.Services.AddScoped<IVisitorAccessControlPersist, VisitorAccessControlPesist>();
+
 
 var app = builder.Build();
 

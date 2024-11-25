@@ -22,7 +22,7 @@ public class CreateReportUnits
     
     public CreateReportUnits(string wwwRootPath)
     {
-        this.wwwRootPath = wwwRootPath + "\\report\\Units\\";
+        this.wwwRootPath = wwwRootPath;
         baseFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252,false);
         cellFont = new Font(baseFont,10,iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
         
@@ -30,7 +30,7 @@ public class CreateReportUnits
 
     public string ReportPDF(List<Unit> units)
     {
-            ClearDirectory(wwwRootPath);
+            ClearDirectory(wwwRootPath + "\\report\\Units\\");
             var pdf = PageConfiguration(15F, 15F, 15F, 20F, true);
             var reportName = CreateReportName("Proprietarios");
             var folder = CreateReportInPath(reportName);
@@ -56,7 +56,7 @@ public class CreateReportUnits
             }
             pdf.Close();
             folder.Close();
-        return wwwRootPath + reportName;
+        return wwwRootPath + "\\report\\Units\\" + reportName;
   
         return null;
     }
@@ -84,7 +84,7 @@ public class CreateReportUnits
     private FileStream CreateReportInPath(string reportName)
     {
 
-        path = wwwRootPath + reportName;
+        path = wwwRootPath + "\\report\\Units\\" + reportName;
         return new FileStream(path, FileMode.Create);
     }
     private PdfWriter CreatePdfWriter(Document pdf, FileStream path)
